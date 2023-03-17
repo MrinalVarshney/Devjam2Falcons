@@ -1,10 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React, { useState } from 'react';
 import { Button, Text, View, TextInput, ScrollView, StyleSheet, FlatList, TouchableOpacity } from 'react-native'
 
@@ -26,12 +19,6 @@ const App = () => {
   const onSelect = ind => {
     const tempData = [];
     data.map((item, index) => {
-      // if (index == ind) {
-      //   tempData.push(true);
-      // }
-      // else {
-      //   tempData.push(false);
-      // }
       if (index == ind) {
         if(item==true){
           tempData.push(false)
