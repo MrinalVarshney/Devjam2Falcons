@@ -224,7 +224,7 @@ const Addtime=({navigation})=>{
                 </TouchableOpacity>
                 </View>
                 <View style={{flex:1}}>
-                <TouchableOpacity onPress={()=>{navigation.navigate("DayScreen")}}>
+                <TouchableOpacity onPress={()=>{Hope.length>0?navigation.navigate("DayScreen"):Alert.alert('Please add some slots!!")}}>
                     <View style={styles.addbtn}>
                         <Text style={styles.next}>Next</Text>
                     </View>
